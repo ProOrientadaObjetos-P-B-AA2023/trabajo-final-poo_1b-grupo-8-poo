@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package paquete04;
 
-/**
- *
- * @author reroes
- */
 public class Ciudad {
-    
+    private String nombre;
+    private String nombreProvincia;
+
+    public Ciudad(String nombre, String nombreProvincia) {
+        this.nombre = nombre;
+        this.nombreProvincia = nombreProvincia;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getNombreProvincia() {
+        return nombreProvincia;
+    }
+
+    @Override
+    public String toString() {
+        return "Ciudad: " + nombre + ", Provincia: " + nombreProvincia;
+    }
 }

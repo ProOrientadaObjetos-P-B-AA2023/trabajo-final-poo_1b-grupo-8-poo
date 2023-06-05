@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package paquete03;
 
-/**
- *
- * @author reroes
- */
 public class Barrio {
-    
+    private String nombre;
+    private String referencia;
+
+    public Barrio(String nombre, String referencia) {
+        this.nombre = nombre;
+        this.referencia = referencia;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getreferencia() {
+        return referencia;
+    }
+
+    @Override
+    public String toString() {
+        return "Barrio: " + nombre + ", Referencia: " + referencia;
+    }
 }
