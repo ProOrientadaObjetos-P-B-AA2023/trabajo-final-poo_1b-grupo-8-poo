@@ -410,7 +410,7 @@ public boolean verificarArchivosCargados() {
         try {
             FileWriter writer = new FileWriter(constructorasFile,true);
             for (Constructora constructora : constructoras) {
-                writer.write(constructora.getNombre() + "," + constructora.getDireccion() + "\n");
+                writer.write(constructora.getNombre() + "," + constructora.getIdEmpresa()+ "\n");
             }
             writer.close();
         } catch (IOException e) {
